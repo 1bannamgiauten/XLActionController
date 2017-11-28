@@ -13,7 +13,8 @@ Pod::Spec.new do |spec|
 
   # Core subspec
   spec.subspec 'Core' do |core|
-    core.source_files = ['Source/*.swift', 'Source/*.xib']
+    core.source_files = ['Source/*.swift']
+    core.resources = 'Resource/*.xib'
   end
 
   # One subspec for each example provided by the library
